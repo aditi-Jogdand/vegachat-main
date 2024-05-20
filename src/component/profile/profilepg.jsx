@@ -212,7 +212,7 @@ function Profilepg() {
         )}
   
         {isEditing() && (
-          <div class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
+          <div class="fixed z-20 inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
             <div class="bg-white p-6 rounded-lg">
               <h2 class="text-xl font-bold mb-4 text-gray-800">Edit Profile</h2>
               <label class="block mb-2">
