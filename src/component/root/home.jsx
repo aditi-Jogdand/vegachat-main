@@ -98,6 +98,7 @@ const home = () => {
         </div>
         <Profile class='z-10'/>
       </div>
+      <div class="p-20"></div>
     </div>
   );
 };
