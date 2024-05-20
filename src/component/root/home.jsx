@@ -5,7 +5,7 @@ import post1ex from "../posts/POST/ex1";
 
 const allPosts = {
   "For You": [
-    { id: 1, user: "VeganUser1", profileImage: "https://via.placeholder.com/40", content: "Loving my new vegan recipe! Check out this delicious tofu stir-fry I made.", likes: 10, comments: 5 , url:post1ex},
+    { id: 1, user: "VeganUser1", profileImage: "https://via.placeholder.com/40", content: "Loving my new vegan recipe! Check out this delicious tofu stir-fry I made.", likes: 10, comments: 5 },
     { id: 2, user: "VeganUser2", profileImage: "https://via.placeholder.com/40", content: "Just had the best vegan burger. Who says vegans can't enjoy burgers? 😋", likes: 15, comments: 3 },
     { id: 9, user: "VeganUser2", profileImage: "https://via.placeholder.com/40", content: "Just had the best vegan burger. Who says vegans can't enjoy burgers? 😋", likes: 15, comments: 3 },
     { id: 10, user: "VeganUser2", profileImage: "https://via.placeholder.com/40", content: "Just had the best vegan burger. Who says vegans can't enjoy burgers? 😋", likes: 15, comments: 3 }
