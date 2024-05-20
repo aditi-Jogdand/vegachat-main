@@ -5,7 +5,7 @@ import Profilebg from '../img/bg.jpg';
 function Profile() {
     return (
       <>
-    <div class="hidden fixed right-1 lg:block lg:w-1/3 p-6 bg-transparent rounded top-0">
+    <div class="hidden fixed z-10 right-1 lg:block lg:w-1/3 p-6 pb-32 bg-transparent rounded top-0">
         <div class="relative">
         <div class="profile bg-gray-500  rounded rounded-t-lg pb-5">
           <div class="relative mb-8 flex items-center justify-end pr-5">
