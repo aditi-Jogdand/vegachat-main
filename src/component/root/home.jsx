@@ -64,7 +64,7 @@ const home = () => {
           <div class="space-y-6">
             <For each={posts()}>
               {(post) => (
-                <div class="p-6 lg:p-10 bg-white rounded-lg shadow-md">
+                <div class="p-3 lg:p-10 bg-white rounded-lg shadow-md">
                   <div class="flex justify-between items-center">
                     <div class="flex items-center">
                       <img class="w-8 h-8 rounded-full mr-2" src={post.profileImage} alt={post.user} />
