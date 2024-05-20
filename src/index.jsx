@@ -8,7 +8,7 @@ import Mainpg from "./component/root/home";
 import Nav from "./component/root/nav";
 
 const Home = lazy(() => import("./component/root/home"));
-// const Profile = lazy(() => import("./component/profile/profilepg"));
+const Profile = lazy(() => import("./component/profile/profilepg"));
 // const Write = lazy(() => import("./component/write"));
 // const Settings = lazy(() => import("./component/''"));
 // const Register = lazy(() => import("./component/''"));
@@ -17,17 +17,17 @@ const Home = lazy(() => import("./component/root/home"));
 const App = props => (
   <>
   <Nav/>
-  <Mainpg/>
+  {/* <Mainpg/> */}
     {props.children}
   </>
 );
 
 render(() => (
   <Router root={App}>
-    {/* <Route path="/profile" component={Profile}/>
-    <Route path="/write" component={Write}/>
+    <Route path="/profile" component={Profile}/>
+    {/* <Route path="/write" component={Write}/> */}
 
-    <Route path="/" component={Home} /> */}
+    <Route path="/" component={Home} />
   </Router>
 ),document.getElementById("root"));
 

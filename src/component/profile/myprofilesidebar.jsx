@@ -1,7 +1,7 @@
 import { createSignal } from 'solid-js';
 import Profilepic from '../img/profile.png';
 import Profilebg from '../img/bg.jpg';
-
+// import  '../../../site';
 function Profile() {
     return (
       <>
