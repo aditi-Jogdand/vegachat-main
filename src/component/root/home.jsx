@@ -1,11 +1,11 @@
 import { createSignal } from "solid-js";
 import { For } from "solid-js/web";
 import Profile from "../profile/myprofilesidebar";
-
+import post1ex from "../posts/POST/ex1";
 
 const allPosts = {
   "For You": [
-    { id: 1, user: "VeganUser1", profileImage: "https://via.placeholder.com/40", content: "Loving my new vegan recipe! Check out this delicious tofu stir-fry I made.", likes: 10, comments: 5 },
+    { id: 1, user: "VeganUser1", profileImage: "https://via.placeholder.com/40", content: "Loving my new vegan recipe! Check out this delicious tofu stir-fry I made.", likes: 10, comments: 5 , url:post1ex},
     { id: 2, user: "VeganUser2", profileImage: "https://via.placeholder.com/40", content: "Just had the best vegan burger. Who says vegans can't enjoy burgers? 😋", likes: 15, comments: 3 },
     { id: 9, user: "VeganUser2", profileImage: "https://via.placeholder.com/40", content: "Just had the best vegan burger. Who says vegans can't enjoy burgers? 😋", likes: 15, comments: 3 },
     { id: 10, user: "VeganUser2", profileImage: "https://via.placeholder.com/40", content: "Just had the best vegan burger. Who says vegans can't enjoy burgers? 😋", likes: 15, comments: 3 }
@@ -23,10 +23,9 @@ const allPosts = {
     { id: 8, user: "veganuser8", profileImage: "https://via.placeholder.com/40", content: "Let's bake something tasty & delicious today!", likes: 300, comments: 60 }
   ]
 };
-
 const sections = ["For You", "Trending", "Recent", "Featured Recipe 🌱"];
 
-const home = () => {
+function home() {
   const [selectedSection, setSelectedSection] = createSignal("For You");
   const [posts, setPosts] = createSignal(allPosts["For You"]);
 
@@ -34,6 +33,11 @@ const home = () => {
     setSelectedSection(section);
     setPosts(allPosts[section]);
   };
+
+  const handlePostClick = (url) => {
+    window.location.href = url;
+  };
+
 
   return (
     <div class="min-h-screen flex flex-col bg-gradient-to-br from-purple-300 to-blue-300 text-gray-900">
@@ -64,7 +68,7 @@ const home = () => {
           <div class="space-y-6">
             <For each={posts()}>
               {(post) => (
-                <div class="p-3 lg:p-10 bg-white rounded-lg shadow-md">
+                <div class="p-3 lg:p-10 bg-white rounded-lg shadow-md" >
                   <div class="flex justify-between items-center">
                     <div class="flex items-center">
                       <img class="w-8 h-8 rounded-full mr-2" src={post.profileImage} alt={post.user} />
@@ -90,7 +94,11 @@ const home = () => {
                       </button>
                     </div>
                   </div>
-                  <p class="mt-4 text-gray-800">{post.content}</p>
+                  <p class="mt-4 text-gray-800">
+                    {/* <a href="/posts/ex1"> */}
+                      {post.content}
+                      {/* </a> */}
+                    </p>
                 </div>
               )}
             </For>
