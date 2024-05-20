@@ -96,7 +96,7 @@ const home = () => {
             </For>
           </div>
         </div>
-        <Profile/>
+        <Profile class='z-10'/>
       </div>
     </div>
   );

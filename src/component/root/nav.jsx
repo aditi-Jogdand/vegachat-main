@@ -11,7 +11,7 @@ const navItems = [
 const Nav = () => {
   return (
     <>
-    <div class="fixed bottom-0 w-full bg-white shadow-md">
+    <div class="fixed bottom-0 w-full bg-white shadow-md z-20">
       <nav class="flex justify-between items-center px-6 py-4 container mx-auto">
         <For each={navItems}>
           {(item) => (
