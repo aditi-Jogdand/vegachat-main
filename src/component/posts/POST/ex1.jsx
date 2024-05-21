@@ -38,7 +38,8 @@ function Post1Ex() {
     <div class="min-h-screen bg-gray-100 flex flex-col items-center py-10">
       <div class="w-full max-w-4xl bg-white p-10 rounded-lg shadow-lg">
         <div class="mb-6">
-          <h1 class="text-3xl font-bold mb-4">How vegan diet benefited me who is diabetic</h1>
+          <h1 class="text-3xl font-bold mb-4 text-gray-600">How vegan diet benefited me who is diabetic</h1>
+          <hr class="w-2/3 h-1/2 my-4  bg-gray-900" />
           <p class="text-gray-700 leading-relaxed mb-4">
             🌱 Calling all health enthusiasts and foodies! 🥑 Are you curious about the benefits of a vegan diet on insulin levels? 🤔 Well, let me share my personal experience since I made the switch to a plant-based lifestyle. 🌱
           </p>

@@ -12,8 +12,7 @@ const Home = lazy(() => import("./component/root/home"));
 const Profile = lazy(() => import("./component/profile/profilepg"));
 const Write = lazy(() => import("./component/write"));
 const Expost1 = lazy(() => import("./component/posts/POST/ex1"));
-
-// const Settings = lazy(() => import("./component/''"));
+const UserSettings = lazy(() => import("./component/settings"));
 // const Register = lazy(() => import("./component/''"));
 // const Login = lazy(() => import("./component/''"));
 
@@ -29,7 +28,9 @@ render(() => (
   <Router root={App}>
     <Route path="/profile" component={Profile}/>
     <Route path="/write" component={Write}/>
-    <Route path="/posts/ex1" component={post1ex}/>
+    <Route path="/posts/ex1" component={Expost1}/>
+    <Route path="/settings" component={UserSettings}/>
+
     <Route path="/" component={Home} />
   </Router>
 ),document.getElementById("root"));
