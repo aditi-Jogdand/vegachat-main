@@ -7,6 +7,7 @@ import "./index.css";
 import Mainpg from "./component/root/home";
 import Nav from "./component/root/nav";
 import post1ex from "./component/posts/POST/ex1";
+import ChatBot from "./component/chatbot/chatbtn";
 
 const Home = lazy(() => import("./component/root/home"));
 const Profile = lazy(() => import("./component/profile/profilepg"));
@@ -19,6 +20,7 @@ const UserSettings = lazy(() => import("./component/settings"));
 const App = props => (
   <>
   <Nav/>
+  <ChatBot/>
   {/* <Mainpg/> */}
     {props.children}
   </>
